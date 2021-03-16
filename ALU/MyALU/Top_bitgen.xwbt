@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\English Ruanjian\ISE\CO\compute\MyALU002\Top.ncd
+OUTFILE=E:\English Ruanjian\ISE\CO\compute\MyALU002\Top.bit
+FAMILY=Kintex7
+PART=xc7k160t-1ffg676
+WORKINGDIR=E:\English Ruanjian\ISE\CO\compute\MyALU002
+LICENSE=WebPack
+USER_INFO=__0_0_0

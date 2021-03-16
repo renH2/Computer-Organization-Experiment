@@ -1,0 +1,416 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ISE_New\setup\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3
+-s 1 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf ForALU.ucf
+
+Design file:              Top.ncd
+Physical constraint file: Top.pcf
+Device,package,speed:     xc7k160t,ffg676,C,-1 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock SW<0>
+------------+------------+------------+------------+------------+----------------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                 | Phase  |
+------------+------------+------------+------------+------------+----------------------------------+--------+
+SW<10>      |  339.407(F)|      SLOW  |    4.626(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<11>      |  338.737(F)|      SLOW  |    4.708(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<12>      |  339.409(F)|      SLOW  |    4.817(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<13>      |   11.777(F)|      SLOW  |    4.625(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<14>      |   11.643(F)|      SLOW  |    5.277(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<15>      |   12.092(F)|      SLOW  |    5.055(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+------------+------------+------------+------------+------------+----------------------------------+--------+
+
+Setup/Hold to clock SW<1>
+------------+------------+------------+------------+------------+----------------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                 | Phase  |
+------------+------------+------------+------------+------------+----------------------------------+--------+
+SW<10>      |   21.121(F)|      SLOW  |   -0.118(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |  339.730(F)|      SLOW  |    4.306(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<11>      |   18.095(F)|      SLOW  |    1.227(F)|      SLOW  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |  339.060(F)|      SLOW  |    4.388(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<12>      |   17.538(F)|      SLOW  |    1.369(F)|      SLOW  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |  339.732(F)|      SLOW  |    4.497(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<13>      |   11.730(F)|      SLOW  |    0.379(F)|      SLOW  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |   12.100(F)|      SLOW  |    4.305(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<14>      |   11.337(F)|      SLOW  |    0.869(F)|      SLOW  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |   11.966(F)|      SLOW  |    4.957(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<15>      |   12.013(F)|      SLOW  |    0.145(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |   12.415(F)|      SLOW  |    4.735(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+------------+------------+------------+------------+------------+----------------------------------+--------+
+
+Setup/Hold to clock SW<2>
+------------+------------+------------+------------+------------+----------------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                 | Phase  |
+------------+------------+------------+------------+------------+----------------------------------+--------+
+SW<10>      |   20.926(F)|      SLOW  |   -0.030(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |  340.137(F)|      SLOW  |    3.796(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<11>      |   17.900(F)|      SLOW  |    1.466(F)|      SLOW  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |  339.467(F)|      SLOW  |    3.878(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<12>      |   17.343(F)|      SLOW  |    1.608(F)|      SLOW  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |  340.139(F)|      SLOW  |    3.987(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<13>      |   11.535(F)|      SLOW  |    0.618(F)|      SLOW  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |   12.507(F)|      SLOW  |    3.795(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<14>      |   11.142(F)|      SLOW  |    1.108(F)|      SLOW  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |   12.373(F)|      SLOW  |    4.447(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<15>      |   11.818(F)|      SLOW  |    0.307(F)|      SLOW  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |   12.822(F)|      SLOW  |    4.225(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+------------+------------+------------+------------+------------+----------------------------------+--------+
+
+Setup/Hold to clock SW<3>
+------------+------------+------------+------------+------------+----------------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                 | Phase  |
+------------+------------+------------+------------+------------+----------------------------------+--------+
+SW<10>      |   21.119(F)|      SLOW  |   -0.171(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |  339.783(F)|      SLOW  |    4.228(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<11>      |   18.093(F)|      SLOW  |    1.259(F)|      SLOW  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |  339.113(F)|      SLOW  |    4.310(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<12>      |   17.536(F)|      SLOW  |    1.401(F)|      SLOW  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |  339.785(F)|      SLOW  |    4.419(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<13>      |   11.728(F)|      SLOW  |    0.411(F)|      SLOW  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |   12.153(F)|      SLOW  |    4.227(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<14>      |   11.335(F)|      SLOW  |    0.901(F)|      SLOW  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |   12.019(F)|      SLOW  |    4.879(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<15>      |   12.011(F)|      SLOW  |    0.100(F)|      SLOW  |a1/mode[3]_GND_162_o_Mux_86_o     |   0.000|
+            |   12.468(F)|      SLOW  |    4.657(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+------------+------------+------------+------------+------------+----------------------------------+--------+
+
+Setup/Hold to clock SW<6>
+------------+------------+------------+------------+------------+----------------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                 | Phase  |
+------------+------------+------------+------------+------------+----------------------------------+--------+
+SW<10>      |  338.583(F)|      SLOW  |    5.650(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<11>      |  337.913(F)|      SLOW  |    5.732(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<12>      |  338.585(F)|      SLOW  |    5.841(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<13>      |   10.953(F)|      SLOW  |    5.649(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<14>      |   10.819(F)|      SLOW  |    6.301(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<15>      |   11.268(F)|      SLOW  |    6.079(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+------------+------------+------------+------------+------------+----------------------------------+--------+
+
+Setup/Hold to clock SW<7>
+------------+------------+------------+------------+------------+----------------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                 | Phase  |
+------------+------------+------------+------------+------------+----------------------------------+--------+
+SW<10>      |  340.246(F)|      SLOW  |    3.689(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<11>      |  339.576(F)|      SLOW  |    3.771(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<12>      |  340.248(F)|      SLOW  |    3.880(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<13>      |   12.616(F)|      SLOW  |    3.688(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<14>      |   12.482(F)|      SLOW  |    4.340(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+SW<15>      |   12.931(F)|      SLOW  |    4.118(F)|      SLOW  |a1/mode[3]_PWR_104_o_Mux_22_o_BUFG|   0.000|
+------------+------------+------------+------------+------------+----------------------------------+--------+
+
+Setup/Hold to clock SW<8>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+SW<10>      |   18.721(F)|      SLOW  |    5.485(F)|      SLOW  |SW_8_IBUF_BUFG    |   0.000|
+SW<11>      |   15.695(F)|      SLOW  |    5.390(F)|      SLOW  |SW_8_IBUF_BUFG    |   0.000|
+SW<12>      |   15.138(F)|      SLOW  |    5.480(F)|      SLOW  |SW_8_IBUF_BUFG    |   0.000|
+SW<13>      |    7.716(F)|      SLOW  |    5.542(F)|      SLOW  |SW_8_IBUF_BUFG    |   0.000|
+SW<14>      |    7.093(F)|      SLOW  |    5.464(F)|      SLOW  |SW_8_IBUF_BUFG    |   0.000|
+SW<15>      |    7.319(F)|      SLOW  |    5.465(F)|      SLOW  |SW_8_IBUF_BUFG    |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+SW<10>      |   12.884(R)|      SLOW  |    1.741(R)|      SLOW  |clk_BUFGP         |   0.000|
+SW<11>      |    9.858(R)|      SLOW  |    2.124(R)|      SLOW  |clk_BUFGP         |   0.000|
+SW<12>      |    9.301(R)|      SLOW  |    1.697(R)|      SLOW  |clk_BUFGP         |   0.000|
+SW<13>      |    6.052(R)|      SLOW  |    1.770(R)|      SLOW  |clk_BUFGP         |   0.000|
+SW<14>      |    6.750(R)|      SLOW  |    2.173(R)|      SLOW  |clk_BUFGP         |   0.000|
+SW<15>      |    6.385(R)|      SLOW  |    1.355(R)|      SLOW  |clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock SW<1> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                             | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)            | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+SEGMENT<0>  |        15.938(F)|      SLOW  |         5.231(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<1>  |        14.725(F)|      SLOW  |         5.302(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<2>  |        14.841(F)|      SLOW  |         5.131(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<3>  |        13.816(F)|      SLOW  |         4.936(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<4>  |        13.801(F)|      SLOW  |         5.233(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<5>  |        14.159(F)|      SLOW  |         5.110(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<6>  |        13.139(F)|      SLOW  |         5.201(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+
+Clock SW<2> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                             | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)            | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+SEGMENT<0>  |        16.177(F)|      SLOW  |         5.288(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<1>  |        14.964(F)|      SLOW  |         5.359(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<2>  |        15.080(F)|      SLOW  |         5.188(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<3>  |        14.055(F)|      SLOW  |         4.993(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<4>  |        14.040(F)|      SLOW  |         5.290(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<5>  |        14.398(F)|      SLOW  |         5.167(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<6>  |        13.378(F)|      SLOW  |         5.258(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+
+Clock SW<3> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                             | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)            | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+SEGMENT<0>  |        15.970(F)|      SLOW  |         5.162(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<1>  |        14.757(F)|      SLOW  |         5.233(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<2>  |        14.873(F)|      SLOW  |         5.062(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<3>  |        13.848(F)|      SLOW  |         4.867(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<4>  |        13.833(F)|      SLOW  |         5.164(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<5>  |        14.191(F)|      SLOW  |         5.041(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+SEGMENT<6>  |        13.171(F)|      SLOW  |         5.132(F)|      FAST  |a1/mode[3]_GND_162_o_Mux_86_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+AN<0>       |        12.203(R)|      SLOW  |         4.674(R)|      FAST  |clk_BUFGP         |   0.000|
+AN<1>       |        12.614(R)|      SLOW  |         4.868(R)|      FAST  |clk_BUFGP         |   0.000|
+AN<2>       |        12.460(R)|      SLOW  |         4.773(R)|      FAST  |clk_BUFGP         |   0.000|
+AN<3>       |        12.382(R)|      SLOW  |         4.699(R)|      FAST  |clk_BUFGP         |   0.000|
+SEGLED_CLK  |        13.479(R)|      SLOW  |         5.286(R)|      FAST  |clk_BUFGP         |   0.000|
+SEGMENT<0>  |        17.276(R)|      SLOW  |         5.215(R)|      FAST  |clk_BUFGP         |   0.000|
+SEGMENT<1>  |        16.063(R)|      SLOW  |         5.360(R)|      FAST  |clk_BUFGP         |   0.000|
+SEGMENT<2>  |        16.179(R)|      SLOW  |         5.237(R)|      FAST  |clk_BUFGP         |   0.000|
+SEGMENT<3>  |        15.154(R)|      SLOW  |         5.042(R)|      FAST  |clk_BUFGP         |   0.000|
+SEGMENT<4>  |        14.932(R)|      SLOW  |         5.167(R)|      FAST  |clk_BUFGP         |   0.000|
+SEGMENT<5>  |        15.497(R)|      SLOW  |         5.163(R)|      FAST  |clk_BUFGP         |   0.000|
+SEGMENT<6>  |        14.424(R)|      SLOW  |         4.964(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock SW<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW<0>          |         |         |   -0.554|   -0.554|
+SW<1>          |         |         |    0.597|    0.597|
+SW<2>          |         |         |    0.177|    0.177|
+SW<3>          |         |         |    0.278|    0.278|
+SW<6>          |         |         |    0.343|    0.343|
+SW<7>          |         |         |   -0.908|   -0.908|
+SW<8>          |         |         |   -0.082|    5.951|
+clk            |         |         |    1.171|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SW<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW<0>          |         |         |    4.704|    4.704|
+SW<1>          |         |         |    0.862|    0.862|
+SW<2>          |         |         |    0.442|    0.442|
+SW<3>          |         |         |    0.543|    0.543|
+SW<6>          |         |         |    0.608|    0.608|
+SW<7>          |         |         |   -0.643|   -0.643|
+SW<8>          |         |         |    0.183|    5.951|
+clk            |         |         |    1.171|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SW<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW<0>          |         |         |    4.509|    4.509|
+SW<1>          |         |         |    1.122|    1.122|
+SW<2>          |         |         |    0.638|    0.638|
+SW<3>          |         |         |    0.739|    0.739|
+SW<6>          |         |         |    0.804|    0.804|
+SW<7>          |         |         |   -0.447|   -0.447|
+SW<8>          |         |         |    0.379|    5.951|
+clk            |         |         |    1.171|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SW<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW<0>          |         |         |    4.702|    4.702|
+SW<1>          |         |         |    0.890|    0.890|
+SW<2>          |         |         |    0.470|    0.470|
+SW<3>          |         |         |    0.571|    0.571|
+SW<6>          |         |         |    0.636|    0.636|
+SW<7>          |         |         |   -0.615|   -0.615|
+SW<8>          |         |         |    0.211|    5.951|
+clk            |         |         |    1.171|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SW<6>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW<0>          |         |         |   -0.939|   -0.939|
+SW<1>          |         |         |    0.212|    0.212|
+SW<2>          |         |         |   -0.208|   -0.208|
+SW<3>          |         |         |   -0.107|   -0.107|
+SW<6>          |         |         |   -0.042|   -0.042|
+SW<7>          |         |         |   -1.293|   -1.293|
+SW<8>          |         |         |   -0.467|    5.951|
+clk            |         |         |    1.171|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SW<7>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW<0>          |         |         |    0.012|    0.012|
+SW<1>          |         |         |    1.231|    1.231|
+SW<2>          |         |         |    0.743|    0.743|
+SW<3>          |         |         |    0.844|    0.844|
+SW<6>          |         |         |    0.909|    0.909|
+SW<7>          |         |         |   -0.342|   -0.342|
+SW<8>          |         |         |    0.484|    5.951|
+clk            |         |         |    1.171|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   58.806|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+SW<0>          |SEGMENT<0>     |   15.520|
+SW<0>          |SEGMENT<1>     |   14.307|
+SW<0>          |SEGMENT<2>     |   14.423|
+SW<0>          |SEGMENT<3>     |   13.398|
+SW<0>          |SEGMENT<4>     |   13.176|
+SW<0>          |SEGMENT<5>     |   13.741|
+SW<0>          |SEGMENT<6>     |   12.520|
+SW<1>          |SEGMENT<0>     |   15.286|
+SW<1>          |SEGMENT<1>     |   14.073|
+SW<1>          |SEGMENT<2>     |   14.189|
+SW<1>          |SEGMENT<3>     |   13.164|
+SW<1>          |SEGMENT<4>     |   12.942|
+SW<1>          |SEGMENT<5>     |   13.507|
+SW<1>          |SEGMENT<6>     |   12.398|
+SW<2>          |SEGMENT<0>     |   15.925|
+SW<2>          |SEGMENT<1>     |   14.681|
+SW<2>          |SEGMENT<2>     |   14.797|
+SW<2>          |SEGMENT<3>     |   13.930|
+SW<2>          |SEGMENT<4>     |   13.550|
+SW<2>          |SEGMENT<5>     |   14.252|
+SW<2>          |SEGMENT<6>     |   13.390|
+SW<3>          |SEGMENT<0>     |   14.734|
+SW<3>          |SEGMENT<1>     |   13.521|
+SW<3>          |SEGMENT<2>     |   13.637|
+SW<3>          |SEGMENT<3>     |   12.612|
+SW<3>          |SEGMENT<4>     |   12.519|
+SW<3>          |SEGMENT<5>     |   12.955|
+SW<3>          |SEGMENT<6>     |   12.001|
+SW<4>          |SEGMENT<0>     |   14.209|
+SW<4>          |SEGMENT<1>     |   12.996|
+SW<4>          |SEGMENT<2>     |   13.112|
+SW<4>          |SEGMENT<3>     |   12.087|
+SW<4>          |SEGMENT<4>     |   11.865|
+SW<4>          |SEGMENT<5>     |   12.430|
+SW<4>          |SEGMENT<6>     |   11.209|
+SW<5>          |SEGMENT<0>     |   13.175|
+SW<5>          |SEGMENT<1>     |   11.320|
+SW<5>          |SEGMENT<2>     |   11.731|
+SW<5>          |SEGMENT<3>     |   11.180|
+SW<5>          |SEGMENT<4>     |   10.484|
+SW<5>          |SEGMENT<5>     |   11.502|
+SW<5>          |SEGMENT<6>     |   10.640|
+SW<10>         |SEGMENT<0>     |   16.672|
+SW<10>         |SEGMENT<1>     |   15.459|
+SW<10>         |SEGMENT<2>     |   15.575|
+SW<10>         |SEGMENT<3>     |   14.550|
+SW<10>         |SEGMENT<4>     |   14.328|
+SW<10>         |SEGMENT<5>     |   14.893|
+SW<10>         |SEGMENT<6>     |   13.672|
+SW<11>         |SEGMENT<0>     |   16.022|
+SW<11>         |SEGMENT<1>     |   14.167|
+SW<11>         |SEGMENT<2>     |   14.578|
+SW<11>         |SEGMENT<3>     |   14.027|
+SW<11>         |SEGMENT<4>     |   13.331|
+SW<11>         |SEGMENT<5>     |   14.349|
+SW<11>         |SEGMENT<6>     |   13.487|
+SW<12>         |SEGMENT<0>     |   15.121|
+SW<12>         |SEGMENT<1>     |   13.988|
+SW<12>         |SEGMENT<2>     |   14.104|
+SW<12>         |SEGMENT<3>     |   13.501|
+SW<12>         |SEGMENT<4>     |   13.565|
+SW<12>         |SEGMENT<5>     |   13.342|
+SW<12>         |SEGMENT<6>     |   12.709|
+SW<13>         |SEGMENT<0>     |   13.311|
+SW<13>         |SEGMENT<1>     |   12.098|
+SW<13>         |SEGMENT<2>     |   12.214|
+SW<13>         |SEGMENT<3>     |   11.189|
+SW<13>         |SEGMENT<4>     |   10.967|
+SW<13>         |SEGMENT<5>     |   11.532|
+SW<13>         |SEGMENT<6>     |   10.311|
+SW<14>         |SEGMENT<0>     |   12.638|
+SW<14>         |SEGMENT<1>     |   10.783|
+SW<14>         |SEGMENT<2>     |   11.194|
+SW<14>         |SEGMENT<3>     |   10.643|
+SW<14>         |SEGMENT<4>     |    9.947|
+SW<14>         |SEGMENT<5>     |   10.965|
+SW<14>         |SEGMENT<6>     |   10.103|
+SW<15>         |SEGMENT<0>     |   14.883|
+SW<15>         |SEGMENT<1>     |   13.750|
+SW<15>         |SEGMENT<2>     |   13.866|
+SW<15>         |SEGMENT<3>     |   13.263|
+SW<15>         |SEGMENT<4>     |   13.327|
+SW<15>         |SEGMENT<5>     |   13.104|
+SW<15>         |SEGMENT<6>     |   12.471|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Aug 21 18:53:42 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5770 MB
+
+
+

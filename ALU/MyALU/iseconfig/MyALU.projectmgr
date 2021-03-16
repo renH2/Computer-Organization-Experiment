@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="MyALU" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ALU G:|ISE14.7|14.7|MyALU|ALU.v/f1 - float_sub</ClosedNode>
+         <ClosedNode>/Add_32b E:|English Ruanjian|ISE|CO|compute|MyALU002|Add_32b.v</ClosedNode>
+         <ClosedNode>/Add_32b E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|Add_32b.v</ClosedNode>
+         <ClosedNode>/Display E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|Display.v/d0 - disp_num</ClosedNode>
+         <ClosedNode>/Display E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|Display.v/s0 - Seg7Device</ClosedNode>
+         <ClosedNode>/FA_32bits E:|English Ruanjian|ISE|CO|compute|MyALU002|FA_32bits.v</ClosedNode>
+         <ClosedNode>/FA_4bits E:|English Ruanjian|ISE|CO|compute|MyALU002|FA_4bits.v</ClosedNode>
+         <ClosedNode>/GetInput G:|ISE14.7|14.7|MyALU|GetInput.v</ClosedNode>
+         <ClosedNode>/Mul32_32Add E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|Mul32_32Add.v</ClosedNode>
+         <ClosedNode>/Mul32_32Add G:|MyALU|Mul32_32Add.v/a0 - Add_32b</ClosedNode>
+         <ClosedNode>/Seg7Decode E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|Seg7Decode.v</ClosedNode>
+         <ClosedNode>/Seg7Device G:|ISE14.7|14.7|MyALU|Seg7Device.v</ClosedNode>
+         <ClosedNode>/Top E:|English Ruanjian|ISE|CO|compute|MyALU002|Top.v/a1 - ALU/a0 - Add_32b</ClosedNode>
+         <ClosedNode>/Top E:|English Ruanjian|ISE|CO|compute|MyALU002|Top.v/a1 - ALU/a0 - FA_32bits</ClosedNode>
+         <ClosedNode>/Top E:|English Ruanjian|ISE|CO|compute|MyALU002|Top.v/a1 - ALU/a1 - Add_32b</ClosedNode>
+         <ClosedNode>/Top E:|English Ruanjian|ISE|CO|compute|MyALU002|Top.v/a1 - ALU/a1 - FA_32bits</ClosedNode>
+         <ClosedNode>/Top E:|English Ruanjian|ISE|CO|compute|MyALU002|Top.v/a1 - ALU/f1 - float_sub</ClosedNode>
+         <ClosedNode>/Top E:|English Ruanjian|ISE|CO|compute|MyALU002|Top.v/m6 - DispNum</ClosedNode>
+         <ClosedNode>/Top E:|English Ruanjian|ISE|CO|compute|MyALU002|Top.v/s0 - Seg7Device</ClosedNode>
+         <ClosedNode>/Top E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|Top.v/a1 - ALU</ClosedNode>
+         <ClosedNode>/Top E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|Top.v/d0 - Display</ClosedNode>
+         <ClosedNode>/Top E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|Top.v/m6 - DispNum</ClosedNode>
+         <ClosedNode>/Top E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|Top.v/m6 - disp_num</ClosedNode>
+         <ClosedNode>/Top E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|Top.v/s0 - Seg7Device</ClosedNode>
+         <ClosedNode>/Top E:|MyALU002|Top.v/a1 - ALU</ClosedNode>
+         <ClosedNode>/Top E:|MyALU002|Top.v/a1 - ALU/div64_32 - div64_32</ClosedNode>
+         <ClosedNode>/Top E:|MyALU002|Top.v/a1 - ALU/f1 - float_sub</ClosedNode>
+         <ClosedNode>/Top E:|MyALU002|Top.v/a1 - ALU/m0 - Mul32_32Add</ClosedNode>
+         <ClosedNode>/Top E:|MyALU002|Top.v/d0 - Display</ClosedNode>
+         <ClosedNode>/Top E:|MyALU|Top.v/a1 - ALU</ClosedNode>
+         <ClosedNode>/Top E:|MyALU|Top.v/d0 - Display</ClosedNode>
+         <ClosedNode>/Top E:|MyALU|Top.v/g0 - GetInput</ClosedNode>
+         <ClosedNode>/Top G:|ISE14.7|14.7|MyALU-1|MyALU|Top.v/a1 - ALU</ClosedNode>
+         <ClosedNode>/Top G:|ISE14.7|14.7|MyALU-1|MyALU|Top.v/a1 - ALU/div64_32 - div64_32</ClosedNode>
+         <ClosedNode>/Top G:|ISE14.7|14.7|MyALU-1|MyALU|Top.v/a1 - ALU/f1 - float_sub</ClosedNode>
+         <ClosedNode>/Top G:|ISE14.7|14.7|MyALU-1|MyALU|Top.v/a1 - ALU/m0 - Mul32_32Add</ClosedNode>
+         <ClosedNode>/Top G:|ISE14.7|14.7|MyALU-1|MyALU|Top.v/d0 - Display</ClosedNode>
+         <ClosedNode>/Top G:|ISE14.7|14.7|MyALU-1|MyALU|Top.v/g0 - GetInput</ClosedNode>
+         <ClosedNode>/Top G:|ISE14.7|14.7|MyALU|Top.v/a1 - ALU</ClosedNode>
+         <ClosedNode>/Top G:|MyALU002|Top.v/a1 - ALU/a0 - Add_32b</ClosedNode>
+         <ClosedNode>/Top G:|MyALU002|Top.v/a1 - ALU/a1 - Add_32b</ClosedNode>
+         <ClosedNode>/Top G:|MyALU002|Top.v/a1 - ALU/f1 - float_sub</ClosedNode>
+         <ClosedNode>/Top G:|MyALU002|Top.v/d0 - Display</ClosedNode>
+         <ClosedNode>/Top G:|MyALU002|Top.v/m6 - DispNum</ClosedNode>
+         <ClosedNode>/Top G:|MyALU002|Top.v/s0 - Seg7Device</ClosedNode>
+         <ClosedNode>/Top G:|MyALU|MyALU002|Top.v/a1 - ALU/a0 - Add_32b</ClosedNode>
+         <ClosedNode>/Top G:|MyALU|MyALU002|Top.v/a1 - ALU/a1 - Add_32b</ClosedNode>
+         <ClosedNode>/Top G:|MyALU|MyALU002|Top.v/a1 - ALU/d0 - div64_32</ClosedNode>
+         <ClosedNode>/Top G:|MyALU|MyALU002|Top.v/a1 - ALU/f1 - float_sub</ClosedNode>
+         <ClosedNode>/Top G:|MyALU|MyALU002|Top.v/a1 - ALU/m0 - Mul32_32Add</ClosedNode>
+         <ClosedNode>/Top G:|MyALU|MyALU002|Top.v/d0 - Display/d0 - disp_num/XLXI_2 - DisplaySync_MUSER_disp_num</ClosedNode>
+         <ClosedNode>/Top G:|MyALU|Top.v/a1 - ALU</ClosedNode>
+         <ClosedNode>/Top G:|MyALU|Top.v/d0 - Display</ClosedNode>
+         <ClosedNode>/Top G:|MyALU|Top.v/g0 - GetInput</ClosedNode>
+         <ClosedNode>/disp_num G:|ISE14.7|14.7|MyALU|disp_num.vf</ClosedNode>
+         <ClosedNode>/div64_32 E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|div64_32.v</ClosedNode>
+         <ClosedNode>/div64_32 G:|MyALU|div64_32.v/m0 - Add_32b</ClosedNode>
+         <ClosedNode>/float_sub E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|float_sub.v</ClosedNode>
+         <ClosedNode>PROJECT</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>m0 - Mul32 (E:/English Ruanjian/ISE/CO/compute/MyALU002/Mul32.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >6</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000151000000020000000000000000000000000200000064ffffffff000000810000000300000002000001510000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>m0 - Mul32 (E:/English Ruanjian/ISE/CO/compute/MyALU002/Mul32.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000168000000010000000100000000000000000000000064ffffffff000000810000000000000001000001680000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002d2000000040101000100000000000000000000000064ffffffff000000810000000000000004000000cb00000001000000000000002400000001000000000000007800000001000000000000016b0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ALU.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000121000000010001000100000000000000000000000064ffffffff000000810000000000000001000001210000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000168000000010000000100000000000000000000000064ffffffff000000810000000000000001000001680000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000012d0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000168000000010000000100000000000000000000000064ffffffff000000810000000000000001000001680000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ALU_sim E:|English Ruanjian|ISE|CO|compute|MyALU002|ALU_sim.v</ClosedNode>
+         <ClosedNode>/ALU_sim E:|English Ruanjian|ISE|CO|compute|MyALU002|ALU_sim.v/uut - ALU/a0 - Add_32b/a1 - Adder8</ClosedNode>
+         <ClosedNode>/ALU_sim E:|English Ruanjian|ISE|CO|compute|MyALU002|ALU_sim.v/uut - ALU/a0 - Add_32b/a2 - Adder8</ClosedNode>
+         <ClosedNode>/ALU_sim E:|English Ruanjian|ISE|CO|compute|MyALU002|ALU_sim.v/uut - ALU/a0 - Add_32b/a3 - Adder8</ClosedNode>
+         <ClosedNode>/ALU_sim E:|English Ruanjian|ISE|CO|compute|MyALU002|ALU_sim.v/uut - ALU/a0 - FA_32bits</ClosedNode>
+         <ClosedNode>/ALU_sim E:|English Ruanjian|ISE|CO|compute|MyALU002|ALU_sim.v/uut - ALU/a1 - Add_32b</ClosedNode>
+         <ClosedNode>/ALU_sim E:|English Ruanjian|ISE|CO|compute|MyALU002|ALU_sim.v/uut - ALU/a1 - FA_32bits</ClosedNode>
+         <ClosedNode>/ALU_sim E:|English Ruanjian|ISE|CO|compute|MyALU002|ALU_sim.v/uut - ALU/f1 - float_sub</ClosedNode>
+         <ClosedNode>/ALU_sim E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|ALU_sim.v</ClosedNode>
+         <ClosedNode>/ALU_sim G:|MyALU002|ALU_sim.v/uut - ALU</ClosedNode>
+         <ClosedNode>/Display E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|Display.v</ClosedNode>
+         <ClosedNode>/FADD_test E:|English Ruanjian|ISE|CO|compute|MyALU002|FADD_test.v</ClosedNode>
+         <ClosedNode>/FADD_test E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|FADD_test.v</ClosedNode>
+         <ClosedNode>/FADD_test G:|ISE14.7|14.7|MyALU-1|MyALU|FADD_test.v/uut - Top/a1 - ALU/div64_32 - div64_32</ClosedNode>
+         <ClosedNode>/FADD_test G:|ISE14.7|14.7|MyALU-1|MyALU|FADD_test.v/uut - Top/a1 - ALU/f1 - float_sub</ClosedNode>
+         <ClosedNode>/FADD_test G:|ISE14.7|14.7|MyALU-1|MyALU|FADD_test.v/uut - Top/a1 - ALU/m0 - Mul32_32Add</ClosedNode>
+         <ClosedNode>/FADD_test G:|ISE14.7|1=31:4c</ClosedNode>
+         <ClosedNode>/FADD_test G:|MyALU002|FADD_test.v</ClosedNode>
+         <ClosedNode>/FA_32bits_sim E:|English Ruanjian|ISE|CO|compute|MyALU002|FA_32bits_sim.v</ClosedNode>
+         <ClosedNode>/FA_4bits_sim E:|English Ruanjian|ISE|CO|compute|MyALU002|FA_4bits_sim.v</ClosedNode>
+         <ClosedNode>/Mul32_32Add E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|Mul32_32Add.v</ClosedNode>
+         <ClosedNode>/Top_sim E:|English Ruanjian|ISE|CO|compute|MyALU002|Top_sim.v</ClosedNode>
+         <ClosedNode>/Top_sim E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|Top_sim.v</ClosedNode>
+         <ClosedNode>/Top_sim G:|MyALU002|Top_sim.v</ClosedNode>
+         <ClosedNode>/ddiv E:|English Ruanjian|ISE|CO|compute|MyALU002|ddiv.v</ClosedNode>
+         <ClosedNode>/div64_32 E:|English Ruanjian|ISE|CO|compute|MyALU|MyALU002|div64_32.v</ClosedNode>
+         <ClosedNode>PROJECT</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Top_sim (E:/English Ruanjian/ISE/CO/compute/MyALU002/Top_sim.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000f5000000020000000000000000000000000200000064ffffffff000000810000000300000002000000f50000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Top_sim (E:/English Ruanjian/ISE/CO/compute/MyALU002/Top_sim.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000168000000010000000100000000000000000000000064ffffffff000000810000000000000001000001680000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000168000000010000000100000000000000000000000064ffffffff000000810000000000000001000001680000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000168000000010000000100000000000000000000000064ffffffff000000810000000000000001000001680000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>
+<?xml version="1.0" encoding="utf-8"?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="MyALU" >
+   <!--This is an ISE project configuration file.-->
+</Project>

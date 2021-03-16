@@ -1,0 +1,17 @@
+ISim log file
+Running: E:\English Ruanjian\ISE\CO\compute\MyALU002\Top_sim_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/English Ruanjian/ISE/CO/compute/MyALU002/Top_sim_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: For instance a1/f3/, width 2 of formal port Yichu is not equal to width 1 of actual.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: For instance a1/f3/, width 2 of formal port Yichu is not equal to width 1 of actual.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

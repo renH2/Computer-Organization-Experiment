@@ -1,0 +1,77 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/English Ruanjian/ISE/CO/compute/MyALU002/Top_sim_isim_beh.exe" -prj "E:/English Ruanjian/ISE/CO/compute/MyALU002/Top_sim_beh.prj" "work.Top_sim" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/float_add.v" into library work
+WARNING:HDLCompiler:751 - "E:/English Ruanjian/ISE/CO/compute/MyALU002/float_add.v" Line 8: Redeclaration of ansi port ix is not allowed
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/FA.v" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/com/SegmentDecoder.v" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/Mux4to14b.vf" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/Mux4to1.vf" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/Mul32.v" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/float_sub.v" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/float_mul.v" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/float_div.v" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/FA_32bits.v" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/Div_32bits_flag.v" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/Div_32bits.v" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/com/ShiftReg.v" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/com/Seg7Remap.v" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/com/Seg7Decode.v" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/MyMC14495.vf" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/DisplaySync.vf" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/com/MyALU/clkdiv.v" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/com/Seg7Device.v" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/DispNum.vf" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/AntiJitter.v" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/ALU.v" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/Top.v" into library work
+Analyzing Verilog file "E:/English Ruanjian/ISE/CO/compute/MyALU002/Top_sim.v" into library work
+Analyzing Verilog file "D:/ISE_New/setup/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:604 - "E:/English Ruanjian/ISE/CO/compute/MyALU002/float_sub.v" Line 8: Module instantiation should have an instance name
+WARNING:HDLCompiler:1016 - "E:/English Ruanjian/ISE/CO/compute/MyALU002/Top.v" Line 54: Port segment is not connected to this instance
+WARNING:HDLCompiler:189 - "E:/English Ruanjian/ISE/CO/compute/MyALU002/ALU.v" Line 128: Size mismatch in connection of port <Yichu>. Formal port size is 2-bit while actual signal size is 1-bit.
+Completed static elaboration
+Compiling module clkdiv
+Compiling module AntiJitter(WIDTH=4)
+Compiling module INV
+Compiling module AND2
+Compiling module OR4
+Compiling module Mux4to14b_MUSER_DispNum
+Compiling module Mux4to1_MUSER_DispNum
+Compiling module D2_4E_HXILINX_DispNum
+Compiling module VCC
+Compiling module INV4_HXILINX_DispNum
+Compiling module DisplaySync_MUSER_DispNum
+Compiling module AND4
+Compiling module AND3
+Compiling module OR3
+Compiling module OR2
+Compiling module MyMC14495_MUSER_DispNum
+Compiling module DispNum
+Compiling module SegmentDecoder
+Compiling module Seg7Decode
+Compiling module Seg7Remap
+Compiling module ShiftReg(WIDTH=64)
+Compiling module Seg7Device
+Compiling module FA
+Compiling module FA_32bits
+Compiling module Mul32
+Compiling module Div_32bits
+Compiling module Div_32bits_flag
+Compiling module float_add
+Compiling module float_sub
+Compiling module float_mul
+Compiling module float_div
+Compiling module ALU
+Compiling module Top
+Compiling module Top_sim
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 35 Verilog Units
+Built simulation executable E:/English Ruanjian/ISE/CO/compute/MyALU002/Top_sim_isim_beh.exe
+Fuse Memory Usage: 31132 KB
+Fuse CPU Usage: 828 ms
