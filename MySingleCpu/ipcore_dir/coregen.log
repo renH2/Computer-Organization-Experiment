@@ -1,0 +1,11 @@
+WARNING:coreutil:855 - Missing index for system repository 1 in index map file
+   'C:\Users\즈빠\AppData\Roaming\Xilinx\CoreGen\14.7\indexes\xil_index_map.xml'
+   .
+WARNING:coreutil:855 - Missing index for system repository 1 in index map file
+   'C:\Users\즈빠\AppData\Roaming\Xilinx\CoreGen\14.7\indexes\xil_index_map.xml'
+   .
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Cancelled executing Tcl generator.
+Wrote CGP file for project 'InsMEM'.

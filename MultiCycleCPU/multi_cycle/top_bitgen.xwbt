@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\multi_cycle2\multi_cycle1\top.ncd
+OUTFILE=D:\multi_cycle2\multi_cycle1\top.bit
+FAMILY=Kintex7
+PART=xc7k160t-1ffg676
+WORKINGDIR=D:\multi_cycle2\multi_cycle1
+LICENSE=WebPack
+USER_INFO=__0_0_0

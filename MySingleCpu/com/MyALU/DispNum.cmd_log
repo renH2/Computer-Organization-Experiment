@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family kintex7 -verilog DispNum_drc.vf -w {E:/3180105388/lab 7/ScoreBoard/DispNum.sch} 
+sch2sym -intstyle ise -family kintex7 -refsym DispNum {E:/3180105388/lab 7/ScoreBoard/DispNum.sch} {E:/3180105388/lab 7/ScoreBoard/DispNum.sym} 

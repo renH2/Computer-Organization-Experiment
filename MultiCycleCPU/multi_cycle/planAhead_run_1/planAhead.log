@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Jun 29 16:56:13 2020
+# Process ID: 3316
+# Log file: D:/multi_cycle/planAhead_run_1/planAhead.log
+# Journal file: D:/multi_cycle/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from F:/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [F:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [F:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/multi_cycle/pa.fromNetlist.tcl
+# create_project -name multi_cycle -dir "D:/multi_cycle/planAhead_run_2" -part xc7k160tffg676-1
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/multi_cycle/mctop.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/multi_cycle} {ipcore_dir} }
+# add_files [list {ipcore_dir/RAM.ncf}] -fileset [get_property constrset [current_run]]
+# set_property target_constrs_file "K7.ucf" [current_fileset -constrset]
+Adding file 'D:/multi_cycle/K7.ucf' to fileset 'constrs_1'
+# add_files [list {K7.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc7k160tffg676-1
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design mctop.ngc ...
+WARNING:NetListWriters:298 - No output is written to mctop.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus t0/inPC<31 : 2> on block mctop is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   t0/R1/R_addr_B[4]_register[31][31]_wide_mux_4_OUT<13 : 3> on block mctop is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus t0/a0/add1/add2/xb<3 : 1> on block mctop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus t0/a0/add1/add3/xb<3 : 1> on block mctop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus t0/a0/add1/add5/xb<3 : 1> on block mctop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus t0/a0/add1/add6/xb<3 : 1> on block mctop
+   is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file mctop.edif ...
+ngc2edif: Total memory usage is 4327004 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/multi_cycle.data/cache/mctop_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/multi_cycle.data/cache/mctop_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design RAM.ngc ...
+WARNING:NetListWriters:298 - No output is written to RAM.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file RAM.edif ...
+ngc2edif: Total memory usage is 4314144 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design RAM.ngc ...
+WARNING:NetListWriters:298 - No output is written to RAM.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file RAM.edif ...
+ngc2edif: Total memory usage is 4314144 kilobytes
+
+Reading core file 'D:/multi_cycle/ipcore_dir/RAM.ngc' for (cell view 'RAM', library 'mctop_lib', file 'mctop.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-3316-LAPTOP-EGICU9R7/ngc2edif/RAM.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-3316-LAPTOP-EGICU9R7/ngc2edif/RAM.edif]
+INFO: [Netlist 29-17] Analyzing 183 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'mctop' is not ideal for floorplanning, since the cellview 'mctop' defined in file 'mctop.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from F:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/kintex7/kintex7/xc7k160t/ClockRegion.xml
+Loading clock buffers from F:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/kintex7/kintex7/xc7k160t/ClockBuffers.xml
+Loading clock placement rules from F:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/kintex7/ClockPlacerRules.xml
+Loading package pin functions from F:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/kintex7/PinFunctions.xml...
+Loading package from F:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/kintex7/kintex7/xc7k160t/ffg676/Package.xml
+Loading io standards from F:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/kintex7/IOStandards.xml
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Loading device configuration modes from F:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/kintex7/ConfigModes.xml
+Loading list of drcs for the architecture : F:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/kintex7/drc.xml
+link_design: Time (s): elapsed = 00:00:19 . Memory (MB): peak = 595.867 ; gain = 104.137
+INFO: [Common 17-344] 'link_design' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See D:/multi_cycle\planAhead_pid3316.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Jun 29 16:57:10 2020...
+INFO: [Common 17-83] Releasing license: PlanAhead

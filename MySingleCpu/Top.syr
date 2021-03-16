@@ -1,0 +1,1518 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top"
+Output Format                      : NGC
+Target Device                      : xc7k160t-2L-ffg676
+
+---- Source Options
+Top Module Name                    : Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\com\SegmentDecoder.v" into library work
+Parsing module <SegmentDecoder>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\Mux4to14b.vf" into library work
+Parsing module <Mux4to14b>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\Mux4to1.vf" into library work
+Parsing module <Mux4to1>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\com\ShiftReg.v" into library work
+Parsing module <ShiftReg>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\com\Seg7Remap.v" into library work
+Parsing module <Seg7Remap>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\com\Seg7Decode.v" into library work
+Parsing module <Seg7Decode>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\MyMC14495.vf" into library work
+Parsing module <MyMC14495>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\DisplaySync.vf" into library work
+Parsing module <INV4_HXILINX_DisplaySync>.
+Parsing module <D2_4E_HXILINX_DisplaySync>.
+Parsing module <Mux4to1_MUSER_DisplaySync>.
+Parsing module <Mux4to14b_MUSER_DisplaySync>.
+Parsing module <DisplaySync>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\com\MyALU\clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\SignZeroExtend.v" into library work
+Parsing module <SignZeroExtend>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\RegisterFile.v" into library work
+Parsing module <RegisterFile>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\PcAdd.v" into library work
+Parsing module <pcAdd>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\PC.v" into library work
+Parsing module <PC>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\InstructionCut.v" into library work
+Parsing module <InstructionCut>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\InsMEM.v" into library work
+Parsing module <InsMEM>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\DataMEM.v" into library work
+Parsing module <DataMEM>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\ControlUnit.v" into library work
+Parsing module <ControlUnit>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\com\Seg7Device.v" into library work
+Parsing module <Seg7Device>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\DispNum.vf" into library work
+Parsing module <INV4_HXILINX_DispNum>.
+Parsing module <D2_4E_HXILINX_DispNum>.
+Parsing module <MyMC14495_MUSER_DispNum>.
+Parsing module <Mux4to1_MUSER_DispNum>.
+Parsing module <Mux4to14b_MUSER_DispNum>.
+Parsing module <DisplaySync_MUSER_DispNum>.
+Parsing module <DispNum>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\Top.v" into library work
+Parsing module <Top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "C:\Users\HP\Desktop\MySingleCpu\Top.v" Line 92: Port segment is not connected to this instance
+
+Elaborating module <Top>.
+
+Elaborating module <clkdiv>.
+
+Elaborating module <DispNum>.
+
+Elaborating module <DisplaySync_MUSER_DispNum>.
+
+Elaborating module <Mux4to14b_MUSER_DispNum>.
+
+Elaborating module <INV>.
+
+Elaborating module <AND2>.
+
+Elaborating module <OR4>.
+
+Elaborating module <Mux4to1_MUSER_DispNum>.
+
+Elaborating module <D2_4E_HXILINX_DispNum>.
+
+Elaborating module <VCC>.
+
+Elaborating module <INV4_HXILINX_DispNum>.
+
+Elaborating module <MyMC14495_MUSER_DispNum>.
+
+Elaborating module <AND4>.
+
+Elaborating module <AND3>.
+
+Elaborating module <OR3>.
+
+Elaborating module <OR2>.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\Top.v" Line 79: Signal <SW> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\Top.v" Line 80: Signal <curPC> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\Top.v" Line 81: Signal <curPC> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\Top.v" Line 83: Signal <SW> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\Top.v" Line 85: Signal <instruction> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\Top.v" Line 86: Signal <DataOut> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\Top.v" Line 87: Signal <RegChooseOut> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <Seg7Device>.
+
+Elaborating module <Seg7Decode>.
+
+Elaborating module <SegmentDecoder>.
+
+Elaborating module <Seg7Remap>.
+
+Elaborating module <ShiftReg(WIDTH=64)>.
+
+Elaborating module <pcAdd>.
+
+Elaborating module <PC>.
+
+Elaborating module <InsMEM>.
+Reading initialization file \"romData.txt\".
+WARNING:HDLCompiler:1670 - "C:\Users\HP\Desktop\MySingleCpu\InsMEM.v" Line 35: Signal <rom> in initial block is partially initialized.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\InsMEM.v" Line 48: Signal <rom> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <InstructionCut>.
+
+Elaborating module <ControlUnit>.
+WARNING:HDLCompiler:413 - "C:\Users\HP\Desktop\MySingleCpu\ControlUnit.v" Line 50: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\HP\Desktop\MySingleCpu\ControlUnit.v" Line 51: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\HP\Desktop\MySingleCpu\ControlUnit.v" Line 52: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\HP\Desktop\MySingleCpu\ControlUnit.v" Line 53: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\HP\Desktop\MySingleCpu\ControlUnit.v" Line 54: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\ControlUnit.v" Line 81: Signal <func> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\ControlUnit.v" Line 90: Signal <func> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\ControlUnit.v" Line 99: Signal <func> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\ControlUnit.v" Line 108: Signal <func> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\ControlUnit.v" Line 117: Signal <func> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <RegisterFile>.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\RegisterFile.v" Line 49: Signal <regFile> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\RegisterFile.v" Line 50: Signal <regFile> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <ALU>.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\ALU.v" Line 39: Signal <sa> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\ALU.v" Line 40: Signal <extend> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\HP\Desktop\MySingleCpu\ALU.v" Line 51: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <DataMEM>.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\DataMEM.v" Line 50: Signal <ram> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\DataMEM.v" Line 51: Signal <ram> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\DataMEM.v" Line 52: Signal <ram> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\HP\Desktop\MySingleCpu\DataMEM.v" Line 53: Signal <ram> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <SignZeroExtend>.
+"C:\Users\HP\Desktop\MySingleCpu\SignZeroExtend.v" Line 29. $display 0
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Top>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\Top.v".
+WARNING:Xst:647 - Input <SW<12:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\HP\Desktop\MySingleCpu\Top.v" line 92: Output port <segment> of the instance <s0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\HP\Desktop\MySingleCpu\Top.v" line 92: Output port <anode> of the instance <s0> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <Top> synthesized.
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\com\MyALU\clkdiv.v".
+    Found 32-bit register for signal <clkdiv>.
+    Found 32-bit adder for signal <clkdiv[31]_GND_2_o_add_0_OUT> created at line 29.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <clkdiv> synthesized.
+
+Synthesizing Unit <DispNum>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\DispNum.vf".
+    Summary:
+	no macro.
+Unit <DispNum> synthesized.
+
+Synthesizing Unit <DisplaySync_MUSER_DispNum>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\DispNum.vf".
+    Set property "HU_SET = XLXI_4_2" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_7_3" for instance <XLXI_7>.
+    Summary:
+	no macro.
+Unit <DisplaySync_MUSER_DispNum> synthesized.
+
+Synthesizing Unit <Mux4to14b_MUSER_DispNum>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\DispNum.vf".
+    Summary:
+	no macro.
+Unit <Mux4to14b_MUSER_DispNum> synthesized.
+
+Synthesizing Unit <Mux4to1_MUSER_DispNum>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\DispNum.vf".
+    Summary:
+	no macro.
+Unit <Mux4to1_MUSER_DispNum> synthesized.
+
+Synthesizing Unit <D2_4E_HXILINX_DispNum>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\DispNum.vf".
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <D2_4E_HXILINX_DispNum> synthesized.
+
+Synthesizing Unit <INV4_HXILINX_DispNum>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\DispNum.vf".
+    Summary:
+	no macro.
+Unit <INV4_HXILINX_DispNum> synthesized.
+
+Synthesizing Unit <MyMC14495_MUSER_DispNum>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\DispNum.vf".
+    Summary:
+	no macro.
+Unit <MyMC14495_MUSER_DispNum> synthesized.
+
+Synthesizing Unit <Seg7Device>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\com\Seg7Device.v".
+    Found 4x4-bit Read Only RAM for signal <anode>
+    Found 8-bit 4-to-1 multiplexer for signal <segment> created at line 42.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <Seg7Device> synthesized.
+
+Synthesizing Unit <Seg7Decode>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\com\Seg7Decode.v".
+    Summary:
+	no macro.
+Unit <Seg7Decode> synthesized.
+
+Synthesizing Unit <SegmentDecoder>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\com\SegmentDecoder.v".
+    Found 16x7-bit Read Only RAM for signal <segment>
+    Summary:
+	inferred   1 RAM(s).
+Unit <SegmentDecoder> synthesized.
+
+Synthesizing Unit <Seg7Remap>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\com\Seg7Remap.v".
+    Summary:
+	no macro.
+Unit <Seg7Remap> synthesized.
+
+Synthesizing Unit <ShiftReg>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\com\ShiftReg.v".
+        WIDTH = 64
+        DELAY = 12
+    Found 1-bit register for signal <oe>.
+    Found 12-bit register for signal <counter>.
+    Found 65-bit register for signal <shift>.
+    Found 12-bit adder for signal <counter[11]_GND_22_o_add_5_OUT> created at line 54.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  78 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <ShiftReg> synthesized.
+
+Synthesizing Unit <pcAdd>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\PcAdd.v".
+WARNING:Xst:647 - Input <immediate<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <pc>.
+    Found 32-bit register for signal <nextPC>.
+    Found 32-bit adder for signal <n0029> created at line 48.
+    Found 32-bit adder for signal <curPC[31]_immediate[29]_add_5_OUT> created at line 48.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  64 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <pcAdd> synthesized.
+
+Synthesizing Unit <PC>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\PC.v".
+WARNING:Xst:647 - Input <PCSrc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <curPC>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+Synthesizing Unit <InsMEM>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\InsMEM.v".
+WARNING:Xst:647 - Input <IAddr<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IAddr<31:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'rom', unconnected in block 'InsMEM', is tied to its initial value.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <rom>, simulation mismatch.
+    Found 129x32-bit single-port Read Only RAM <Mram_rom> for signal <rom>.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IDataOut<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  32 Latch(s).
+Unit <InsMEM> synthesized.
+
+Synthesizing Unit <InstructionCut>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\InstructionCut.v".
+    Summary:
+	no macro.
+Unit <InstructionCut> synthesized.
+
+Synthesizing Unit <ControlUnit>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\ControlUnit.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <RegDst>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RegWre>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUSrcA>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUSrcB>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCSrc<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCSrc<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUOp<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUOp<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUOp<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ExtSel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  10 Latch(s).
+	inferred  11 Multiplexer(s).
+Unit <ControlUnit> synthesized.
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\RegisterFile.v".
+    Found 32-bit register for signal <RegChooseOut>.
+    Found 32x32-bit dual-port RAM <Mram_regFile> for signal <regFile>.
+    Summary:
+	inferred   3 RAM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <RegisterFile> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\ALU.v".
+    Found 32-bit subtractor for signal <GND_71_o_extend[31]_sub_6_OUT> created at line 43.
+    Found 32-bit adder for signal <GND_71_o_extend[31]_add_4_OUT> created at line 42.
+    Found 32-bit shifter logical left for signal <extend[31]_GND_71_o_shift_left_6_OUT> created at line 44
+    Found 32-bit 8-to-1 multiplexer for signal <result> created at line 41.
+    Found 32-bit comparator greater for signal <GND_71_o_extend[31]_LessThan_10_o> created at line 47
+    Found 32-bit comparator greater for signal <ReadData1[31]_ReadData2[31]_LessThan_12_o> created at line 48
+    Found 1-bit comparator equal for signal <ReadData1[31]_ReadData2[31]_equal_13_o> created at line 48
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <DataMEM>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\DataMEM.v".
+WARNING:Xst:3012 - Available block RAM resources offer a maximum of two write ports. You are apparently describing a RAM with 4 separate write ports for signal <ram>. The RAM will be expanded on registers.
+INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <ram>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Found 8-bit register for signal <ram_ff_0>.
+    Found 8-bit register for signal <ram_ff_1>.
+    Found 8-bit register for signal <ram_ff_2>.
+    Found 8-bit register for signal <ram_ff_3>.
+    Found 8-bit register for signal <ram_ff_4>.
+    Found 8-bit register for signal <ram_ff_5>.
+    Found 8-bit register for signal <ram_ff_6>.
+    Found 8-bit register for signal <ram_ff_7>.
+    Found 8-bit register for signal <ram_ff_8>.
+    Found 8-bit register for signal <ram_ff_9>.
+    Found 8-bit register for signal <ram_ff_10>.
+    Found 8-bit register for signal <ram_ff_11>.
+    Found 8-bit register for signal <ram_ff_12>.
+    Found 8-bit register for signal <ram_ff_13>.
+    Found 8-bit register for signal <ram_ff_14>.
+    Found 8-bit register for signal <ram_ff_15>.
+    Found 8-bit register for signal <ram_ff_16>.
+    Found 8-bit register for signal <ram_ff_17>.
+    Found 8-bit register for signal <ram_ff_18>.
+    Found 8-bit register for signal <ram_ff_19>.
+    Found 8-bit register for signal <ram_ff_20>.
+    Found 8-bit register for signal <ram_ff_21>.
+    Found 8-bit register for signal <ram_ff_22>.
+    Found 8-bit register for signal <ram_ff_23>.
+    Found 8-bit register for signal <ram_ff_24>.
+    Found 8-bit register for signal <ram_ff_25>.
+    Found 8-bit register for signal <ram_ff_26>.
+    Found 8-bit register for signal <ram_ff_27>.
+    Found 8-bit register for signal <ram_ff_28>.
+    Found 8-bit register for signal <ram_ff_29>.
+    Found 8-bit register for signal <ram_ff_30>.
+    Found 8-bit register for signal <ram_ff_31>.
+    Found 32-bit adder for signal <n0113> created at line 50.
+    Found 32-bit adder for signal <n0115> created at line 51.
+    Found 32-bit adder for signal <n0117> created at line 52.
+    Found 8-bit 32-to-1 multiplexer for signal <DAddr[31]_read_port_1_OUT> created at line 0.
+    Found 8-bit 32-to-1 multiplexer for signal <DAddr[31]_read_port_4_OUT> created at line 0.
+    Found 8-bit 32-to-1 multiplexer for signal <DAddr[31]_read_port_7_OUT> created at line 0.
+    Found 8-bit 32-to-1 multiplexer for signal <DAddr[4]_read_port_9_OUT> created at line 0.
+    Found 1-bit tristate buffer for signal <DataOut<31>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<30>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<29>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<28>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<27>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<26>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<25>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<24>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<23>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<22>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<21>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<20>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<19>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<18>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<17>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<16>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<15>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<14>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<13>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<12>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<11>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<10>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<9>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<8>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<7>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<6>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<5>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<4>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<3>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<2>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<1>> created at line 47
+    Found 1-bit tristate buffer for signal <DataOut<0>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<31>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<30>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<29>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<28>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<27>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<26>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<25>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<24>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<23>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<22>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<21>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<20>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<19>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<18>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<17>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<16>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<15>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<14>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<13>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<12>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<11>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<10>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<9>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<8>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<7>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<6>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<5>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<4>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<3>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<2>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<1>> created at line 47
+    Found 1-bit tristate buffer for signal <DB<0>> created at line 47
+    Found 8-bit tristate buffer for signal <ram_trst_0> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_0> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_0> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_0> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_1> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_1> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_1> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_1> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_2> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_2> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_2> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_2> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_3> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_3> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_3> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_3> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_4> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_4> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_4> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_4> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_5> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_5> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_5> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_5> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_6> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_6> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_6> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_6> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_7> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_7> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_7> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_7> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_8> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_8> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_8> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_8> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_9> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_9> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_9> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_9> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_10> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_10> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_10> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_10> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_11> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_11> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_11> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_11> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_12> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_12> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_12> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_12> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_13> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_13> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_13> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_13> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_14> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_14> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_14> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_14> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_15> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_15> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_15> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_15> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_16> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_16> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_16> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_16> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_17> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_17> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_17> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_17> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_18> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_18> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_18> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_18> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_19> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_19> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_19> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_19> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_20> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_20> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_20> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_20> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_21> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_21> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_21> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_21> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_22> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_22> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_22> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_22> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_23> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_23> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_23> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_23> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_24> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_24> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_24> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_24> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_25> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_25> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_25> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_25> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_26> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_26> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_26> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_26> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_27> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_27> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_27> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_27> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_28> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_28> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_28> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_28> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_29> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_29> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_29> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_29> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_30> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_30> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_30> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_30> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_31> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_31> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_31> created at line 32
+    Found 8-bit tristate buffer for signal <ram_trst_31> created at line 32
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 256 D-type flip-flop(s).
+	inferred  36 Multiplexer(s).
+	inferred 192 Tristate(s).
+Unit <DataMEM> synthesized.
+
+Synthesizing Unit <SignZeroExtend>.
+    Related source file is "C:\Users\HP\Desktop\MySingleCpu\SignZeroExtend.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <SignZeroExtend> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 13
+ 129x32-bit single-port Read Only RAM                  : 1
+ 16x7-bit single-port Read Only RAM                    : 8
+ 32x32-bit dual-port RAM                               : 3
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 10
+ 12-bit adder                                          : 1
+ 32-bit adder                                          : 8
+ 32-bit subtractor                                     : 1
+# Registers                                            : 41
+ 1-bit register                                        : 1
+ 12-bit register                                       : 1
+ 32-bit register                                       : 6
+ 65-bit register                                       : 1
+ 8-bit register                                        : 32
+# Latches                                              : 42
+ 1-bit latch                                           : 42
+# Comparators                                          : 3
+ 1-bit comparator equal                                : 1
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 62
+ 1-bit 2-to-1 multiplexer                              : 47
+ 16-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 5
+ 32-bit 8-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+ 65-bit 2-to-1 multiplexer                             : 1
+ 8-bit 32-to-1 multiplexer                             : 4
+ 8-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical left                           : 1
+# Tristates                                            : 192
+ 1-bit tristate buffer                                 : 64
+ 8-bit tristate buffer                                 : 128
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <U1> is unconnected in block <s0>.
+   It will be removed from the design.
+WARNING:Xst:2677 - Node <pc_0> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_1> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_2> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_3> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_4> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_5> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_6> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_7> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_8> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_9> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_10> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_11> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_12> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_13> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_14> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_15> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_16> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_17> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_18> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_19> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_20> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_21> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_22> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_23> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_24> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_25> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_26> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_27> of sequential type is unconnected in block <pcAdd>.
+
+Synthesizing (advanced) Unit <InsMEM>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_rom> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 129-word x 32-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <IAddr>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <InsMEM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <RegisterFile>.
+INFO:Xst:3226 - The RAM <Mram_regFile2> will be implemented as a BLOCK RAM, absorbing the following register(s): <RegChooseOut>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK>           | fall     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <WriteReg>      |          |
+    |     diA            | connected to signal <WriteData>     |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkB           | connected to signal <CLK>           | fall     |
+    |     addrB          | connected to signal <RegChoose>     |          |
+    |     doB            | connected to signal <RegChooseOut>  |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regFile> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <CLK>           | fall     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <WriteReg>      |          |
+    |     diA            | connected to signal <WriteData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <ReadReg1>      |          |
+    |     doB            | connected to signal <ReadData1>     |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regFile1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <CLK>           | fall     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <WriteReg>      |          |
+    |     diA            | connected to signal <WriteData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <ReadReg2>      |          |
+    |     doB            | connected to signal <ReadData2>     |          |
+    -----------------------------------------------------------------------
+Unit <RegisterFile> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Seg7Device>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_anode> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <clkScan>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <anode>         |          |
+    -----------------------------------------------------------------------
+Unit <Seg7Device> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SegmentDecoder>.
+INFO:Xst:3231 - The small RAM <Mram_segment> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <hex>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <segment>       |          |
+    -----------------------------------------------------------------------
+Unit <SegmentDecoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ShiftReg>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <ShiftReg> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clkdiv>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+Unit <clkdiv> synthesized (advanced).
+WARNING:Xst:2677 - Node <pc_0> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_1> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_2> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_3> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_4> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_5> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_6> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_7> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_8> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_9> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_10> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_11> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_12> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_13> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_14> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_15> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_16> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_17> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_18> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_19> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_20> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_21> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_22> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_23> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_24> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_25> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_26> of sequential type is unconnected in block <pcAdd>.
+WARNING:Xst:2677 - Node <pc_27> of sequential type is unconnected in block <pcAdd>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 13
+ 129x32-bit single-port distributed Read Only RAM      : 1
+ 16x7-bit single-port distributed Read Only RAM        : 8
+ 32x32-bit dual-port block RAM                         : 1
+ 32x32-bit dual-port distributed RAM                   : 2
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 7
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 1
+ 5-bit adder                                           : 3
+# Counters                                             : 3
+ 12-bit up counter                                     : 1
+ 32-bit up counter                                     : 2
+# Registers                                            : 390
+ Flip-Flops                                            : 390
+# Comparators                                          : 3
+ 1-bit comparator equal                                : 1
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 125
+ 1-bit 2-to-1 multiplexer                              : 112
+ 16-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 5
+ 32-bit 8-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+ 8-bit 32-to-1 multiplexer                             : 4
+ 8-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical left                           : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2146 - In block <Top>, Counter <m2/clkdiv> <m6/XLXI_4/clkdiv> are equivalent, XST will keep only <m2/clkdiv>.
+WARNING:Xst:1710 - FF/Latch <IDataOut_23> (without init value) has a constant value of 0 in block <InsMEM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IDataOut_10> (without init value) has a constant value of 0 in block <InsMEM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IDataOut_9> (without init value) has a constant value of 0 in block <InsMEM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IDataOut_8> (without init value) has a constant value of 0 in block <InsMEM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <m2/clkdiv_26> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <m2/clkdiv_27> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <m2/clkdiv_28> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <m2/clkdiv_29> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <m2/clkdiv_30> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <m2/clkdiv_31> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2042 - Unit DataMEM: 64 internal tristates are replaced by logic (pull-up yes): DB<0>, DB<10>, DB<11>, DB<12>, DB<13>, DB<14>, DB<15>, DB<16>, DB<17>, DB<18>, DB<19>, DB<1>, DB<20>, DB<21>, DB<22>, DB<23>, DB<24>, DB<25>, DB<26>, DB<27>, DB<28>, DB<29>, DB<2>, DB<30>, DB<31>, DB<3>, DB<4>, DB<5>, DB<6>, DB<7>, DB<8>, DB<9>, DataOut<0>, DataOut<10>, DataOut<11>, DataOut<12>, DataOut<13>, DataOut<14>, DataOut<15>, DataOut<16>, DataOut<17>, DataOut<18>, DataOut<19>, DataOut<1>, DataOut<20>, DataOut<21>, DataOut<22>, DataOut<23>, DataOut<24>, DataOut<25>, DataOut<26>, DataOut<27>, DataOut<28>, DataOut<29>, DataOut<2>, DataOut<30>, DataOut<31>, DataOut<3>, DataOut<4>, DataOut<5>, DataOut<6>, DataOut<7>, DataOut<8>, DataOut<9>.
+WARNING:Xst:2040 - Unit DataMEM: 256 multi-source signals are replaced by logic (pull-up yes): ram_trst_0<24>, ram_trst_0<25>, ram_trst_0<26>, ram_trst_0<27>, ram_trst_0<28>, ram_trst_0<29>, ram_trst_0<30>, ram_trst_0<31>, ram_trst_10<24>, ram_trst_10<25>, ram_trst_10<26>, ram_trst_10<27>, ram_trst_10<28>, ram_trst_10<29>, ram_trst_10<30>, ram_trst_10<31>, ram_trst_11<24>, ram_trst_11<25>, ram_trst_11<26>, ram_trst_11<27>, ram_trst_11<28>, ram_trst_11<29>, ram_trst_11<30>, ram_trst_11<31>, ram_trst_12<24>, ram_trst_12<25>, ram_trst_12<26>, ram_trst_12<27>, ram_trst_12<28>, ram_trst_12<29>, ram_trst_12<30>, ram_trst_12<31>, ram_trst_13<24>, ram_trst_13<25>, ram_trst_13<26>, ram_trst_13<27>, ram_trst_13<28>, ram_trst_13<29>, ram_trst_13<30>, ram_trst_13<31>, ram_trst_14<24>, ram_trst_14<25>, ram_trst_14<26>, ram_trst_14<27>, ram_trst_14<28>, ram_trst_14<29>, ram_trst_14<30>, ram_trst_14<31>, ram_trst_15<24>, ram_trst_15<25>, ram_trst_15<26>, ram_trst_15<27>, ram_trst_15<28>, ram_trst_15<29>, ram_trst_15<30>, ram_trst_15<31>, ram_trst_16<24>, ram_trst_16<25>, ram_trst_16<26>, ram_trst_16<27>, ram_trst_16<28>, ram_trst_16<29>, ram_trst_16<30>, ram_trst_16<31>, ram_trst_17<24>, ram_trst_17<25>, ram_trst_17<26>, ram_trst_17<27>, ram_trst_17<28>, ram_trst_17<29>, ram_trst_17<30>, ram_trst_17<31>, ram_trst_18<24>, ram_trst_18<25>, ram_trst_18<26>, ram_trst_18<27>, ram_trst_18<28>, ram_trst_18<29>, ram_trst_18<30>, ram_trst_18<31>, ram_trst_19<24>, ram_trst_19<25>, ram_trst_19<26>, ram_trst_19<27>, ram_trst_19<28>, ram_trst_19<29>, ram_trst_19<30>, ram_trst_19<31>, ram_trst_1<24>, ram_trst_1<25>, ram_trst_1<26>, ram_trst_1<27>, ram_trst_1<28>, ram_trst_1<29>, ram_trst_1<30>, ram_trst_1<31>, ram_trst_20<24>, ram_trst_20<25>, ram_trst_20<26>, ram_trst_20<27>, ram_trst_20<28>, ram_trst_20<29>, ram_trst_20<30>, ram_trst_20<31>, ram_trst_21<24>, ram_trst_21<25>, ram_trst_21<26>, ram_trst_21<27>, ram_trst_21<28>, ram_trst_21<29>, ram_trst_21<30>, ram_trst_21<31>, ram_trst_22<24>, ram_trst_22<25>, ram_trst_22<26>, ram_trst_22<27>, ram_trst_22<28>, ram_trst_22<29>, ram_trst_22<30>, ram_trst_22<31>, ram_trst_23<24>, ram_trst_23<25>, ram_trst_23<26>, ram_trst_23<27>, ram_trst_23<28>, ram_trst_23<29>, ram_trst_23<30>, ram_trst_23<31>, ram_trst_24<24>, ram_trst_24<25>, ram_trst_24<26>, ram_trst_24<27>, ram_trst_24<28>, ram_trst_24<29>, ram_trst_24<30>, ram_trst_24<31>, ram_trst_25<24>, ram_trst_25<25>, ram_trst_25<26>, ram_trst_25<27>, ram_trst_25<28>, ram_trst_25<29>, ram_trst_25<30>, ram_trst_25<31>, ram_trst_26<24>, ram_trst_26<25>, ram_trst_26<26>, ram_trst_26<27>, ram_trst_26<28>, ram_trst_26<29>, ram_trst_26<30>, ram_trst_26<31>, ram_trst_27<24>, ram_trst_27<25>, ram_trst_27<26>, ram_trst_27<27>, ram_trst_27<28>, ram_trst_27<29>, ram_trst_27<30>, ram_trst_27<31>, ram_trst_28<24>, ram_trst_28<25>, ram_trst_28<26>, ram_trst_28<27>, ram_trst_28<28>, ram_trst_28<29>, ram_trst_28<30>, ram_trst_28<31>, ram_trst_29<24>, ram_trst_29<25>, ram_trst_29<26>, ram_trst_29<27>, ram_trst_29<28>, ram_trst_29<29>, ram_trst_29<30>, ram_trst_29<31>, ram_trst_2<24>, ram_trst_2<25>, ram_trst_2<26>, ram_trst_2<27>, ram_trst_2<28>, ram_trst_2<29>, ram_trst_2<30>, ram_trst_2<31>, ram_trst_30<24>, ram_trst_30<25>, ram_trst_30<26>, ram_trst_30<27>, ram_trst_30<28>, ram_trst_30<29>, ram_trst_30<30>, ram_trst_30<31>, ram_trst_31<24>, ram_trst_31<25>, ram_trst_31<26>, ram_trst_31<27>, ram_trst_31<28>, ram_trst_31<29>, ram_trst_31<30>, ram_trst_31<31>, ram_trst_3<24>, ram_trst_3<25>, ram_trst_3<26>, ram_trst_3<27>, ram_trst_3<28>, ram_trst_3<29>, ram_trst_3<30>, ram_trst_3<31>, ram_trst_4<24>, ram_trst_4<25>, ram_trst_4<26>, ram_trst_4<27>, ram_trst_4<28>, ram_trst_4<29>, ram_trst_4<30>, ram_trst_4<31>, ram_trst_5<24>, ram_trst_5<25>, ram_trst_5<26>, ram_trst_5<27>, ram_trst_5<28>, ram_trst_5<29>, ram_trst_5<30>, ram_trst_5<31>, ram_trst_6<24>, ram_trst_6<25>, ram_trst_6<26>, ram_trst_6<27>, ram_trst_6<28>, ram_trst_6<29>, ram_trst_6<30>, ram_trst_6<31>, ram_trst_7<24>, ram_trst_7<25>, ram_trst_7<26>, ram_trst_7<27>, ram_trst_7<28>, ram_trst_7<29>, ram_trst_7<30>, ram_trst_7<31>, ram_trst_8<24>, ram_trst_8<25>, ram_trst_8<26>, ram_trst_8<27>, ram_trst_8<28>, ram_trst_8<29>, ram_trst_8<30>, ram_trst_8<31>, ram_trst_9<24>, ram_trst_9<25>, ram_trst_9<26>, ram_trst_9<27>, ram_trst_9<28>, ram_trst_9<29>, ram_trst_9<30>, ram_trst_9<31>.
+
+Optimizing unit <Mux4to14b_MUSER_DispNum> ...
+
+Optimizing unit <MyMC14495_MUSER_DispNum> ...
+
+Optimizing unit <Top> ...
+
+Optimizing unit <D2_4E_HXILINX_DispNum> ...
+
+Optimizing unit <INV4_HXILINX_DispNum> ...
+
+Optimizing unit <pcAdd> ...
+
+Optimizing unit <PC> ...
+
+Optimizing unit <DataMEM> ...
+
+Optimizing unit <InsMEM> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <Seg7Device> ...
+
+Optimizing unit <ShiftReg> ...
+
+Optimizing unit <ControlUnit> ...
+WARNING:Xst:2677 - Node <m2/clkdiv_19> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <m2/clkdiv_20> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <m2/clkdiv_21> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <m2/clkdiv_22> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <m2/clkdiv_23> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <m2/clkdiv_24> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <m2/clkdiv_25> of sequential type is unconnected in block <Top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 421
+ Flip-Flops                                            : 421
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2524
+#      AND2                        : 37
+#      AND3                        : 11
+#      AND4                        : 9
+#      GND                         : 1
+#      INV                         : 23
+#      LUT1                        : 61
+#      LUT2                        : 73
+#      LUT3                        : 89
+#      LUT4                        : 441
+#      LUT5                        : 215
+#      LUT6                        : 1188
+#      MUXCY                       : 196
+#      MUXF7                       : 4
+#      OR2                         : 7
+#      OR3                         : 3
+#      OR4                         : 10
+#      VCC                         : 1
+#      XORCY                       : 155
+# FlipFlops/Latches                : 459
+#      FD                          : 19
+#      FDCE                        : 32
+#      FDE                         : 338
+#      FDRE                        : 32
+#      LD                          : 38
+# RAMS                             : 15
+#      RAM32M                      : 10
+#      RAM32X1D                    : 4
+#      RAMB18E1                    : 1
+# Clock Buffers                    : 4
+#      BUFG                        : 3
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 11
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-2l 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             459  out of  202800     0%  
+ Number of Slice LUTs:                 2138  out of  101400     2%  
+    Number used as Logic:              2090  out of  101400     2%  
+    Number used as Memory:               48  out of  35000     0%  
+       Number used as RAM:               48
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2153
+   Number with an unused Flip Flop:    1694  out of   2153    78%  
+   Number with an unused LUT:            15  out of   2153     0%  
+   Number of fully used LUT-FF pairs:   444  out of   2153    20%  
+   Number of unique control sets:        41
+
+IO Utilization: 
+ Number of IOs:                          34
+ Number of bonded IOBs:                  28  out of    400     7%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    325     0%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                4  out of     32    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------------------+-----------------------------+-------+
+Clock Signal                                                                     | Clock buffer(FF name)       | Load  |
+---------------------------------------------------------------------------------+-----------------------------+-------+
+CLK                                                                              | BUFGP                       | 322   |
+SW<5>                                                                            | IBUF+BUFG                   | 36    |
+InsMemRW(ControlUnit/_n02211:O)                                                  | BUFG(*)(InsMEM/IDataOut_31) | 28    |
+m2/clkdiv_3                                                                      | BUFG                        | 78    |
+ControlUnit/op[5]_PWR_32_o_Select_61_o(ControlUnit/op[5]_PWR_32_o_Select_61_o2:O)| NONE(*)(ControlUnit/ALUSrcB)| 2     |
+ControlUnit/op[5]_PWR_30_o_Select_57_o(ControlUnit/op[5]_PWR_30_o_Select_57_o2:O)| NONE(*)(ControlUnit/ALUSrcA)| 8     |
+---------------------------------------------------------------------------------+-----------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 6.050ns (Maximum Frequency: 165.297MHz)
+   Minimum input arrival time before clock: 1.466ns
+   Maximum output required time after clock: 6.019ns
+   Maximum combinational path delay: 4.998ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 6.050ns (frequency: 165.297MHz)
+  Total number of paths / destination ports: 2695006 / 627
+-------------------------------------------------------------------------
+Delay:               6.050ns (Levels of Logic = 8)
+  Source:            RegisterFile/Mram_regFile3 (RAM)
+  Destination:       RegisterFile/Mram_regFile13 (RAM)
+  Source Clock:      CLK falling
+  Destination Clock: CLK falling
+
+  Data Path: RegisterFile/Mram_regFile3 to RegisterFile/Mram_regFile13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM32M:WCLK->DOA0     7   1.345   0.384  RegisterFile/Mram_regFile3 (A<6>)
+     LUT3:I2->O            1   0.043   0.350  alu/out3_SW0 (N579)
+     LUT6:I5->O            3   0.043   0.615  alu/out3 (alu/out2)
+     LUT6:I1->O            2   0.043   0.355  alu/Mmux__n005211 (alu/_n0052<0>)
+     LUT6:I5->O            1   0.043   0.405  alu/Mmux_result_2_f7_SW0_1 (alu/Mmux_result_2_f7_SW0)
+     LUT5:I3->O          319   0.043   0.533  alu/Mmux_result_2_f7 (result<0>)
+     LUT5:I4->O           16   0.043   0.696  DataMEM/Madd_n0117_Madd_xor<2>11 (DataMEM/n0117<2>)
+     LUT6:I0->O            2   0.043   0.410  DataMEM/Mmux_DAddr[31]_read_port_7_OUT_3 (DataMEM/Mmux_DAddr[31]_read_port_7_OUT_3)
+     LUT5:I3->O            3   0.043   0.351  DataMEM/DB<16>LogicTrst1 (DB<16>)
+     RAM32M:DIC0               0.260          RegisterFile/Mram_regFile13
+    ----------------------------------------
+    Total                      6.050ns (1.949ns logic, 4.101ns route)
+                                       (32.2% logic, 67.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SW<5>'
+  Clock period: 0.629ns (frequency: 1589.446MHz)
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Delay:               0.629ns (Levels of Logic = 1)
+  Source:            pcAdd/pc_31 (FF)
+  Destination:       pcAdd/nextPC_31 (FF)
+  Source Clock:      SW<5> rising
+  Destination Clock: SW<5> rising
+
+  Data Path: pcAdd/pc_31 to pcAdd/nextPC_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.236   0.350  pcAdd/pc_31 (pcAdd/pc_31)
+     LUT5:I4->O            1   0.043   0.000  pcAdd/Mmux_PCSrc[1]_nextPC[31]_wide_mux_6_OUT251 (pcAdd/PCSrc[1]_nextPC[31]_wide_mux_6_OUT<31>)
+     FDRE:D                   -0.000          pcAdd/nextPC_31
+    ----------------------------------------
+    Total                      0.629ns (0.279ns logic, 0.350ns route)
+                                       (44.3% logic, 55.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'm2/clkdiv_3'
+  Clock period: 2.559ns (frequency: 390.776MHz)
+  Total number of paths / destination ports: 10086 / 156
+-------------------------------------------------------------------------
+Delay:               2.559ns (Levels of Logic = 12)
+  Source:            s0/U2/shift_45 (FF)
+  Destination:       s0/U2/shift_64 (FF)
+  Source Clock:      m2/clkdiv_3 rising
+  Destination Clock: m2/clkdiv_3 rising
+
+  Data Path: s0/U2/shift_45 to s0/U2/shift_64
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.236   0.618  s0/U2/shift_45 (s0/U2/shift_45)
+     LUT6:I0->O            1   0.043   0.000  s0/U2/out1_wg_lut<1> (s0/U2/out1_wg_lut<1>)
+     MUXCY:S->O            1   0.238   0.000  s0/U2/out1_wg_cy<1> (s0/U2/out1_wg_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  s0/U2/out1_wg_cy<2> (s0/U2/out1_wg_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  s0/U2/out1_wg_cy<3> (s0/U2/out1_wg_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  s0/U2/out1_wg_cy<4> (s0/U2/out1_wg_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  s0/U2/out1_wg_cy<5> (s0/U2/out1_wg_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  s0/U2/out1_wg_cy<6> (s0/U2/out1_wg_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  s0/U2/out1_wg_cy<7> (s0/U2/out1_wg_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  s0/U2/out1_wg_cy<8> (s0/U2/out1_wg_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  s0/U2/out1_wg_cy<9> (s0/U2/out1_wg_cy<9>)
+     MUXCY:CI->O          67   0.150   0.486  s0/U2/out1_wg_cy<10> (s0/U2/sckEn)
+     LUT3:I2->O           65   0.043   0.475  s0/U2/_n0033_inv1 (s0/U2/_n0033_inv)
+     FDE:CE                    0.161          s0/U2/shift_0
+    ----------------------------------------
+    Total                      2.559ns (0.980ns logic, 1.580ns route)
+                                       (38.3% logic, 61.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ControlUnit/op[5]_PWR_30_o_Select_57_o'
+  Clock period: 5.006ns (frequency: 199.762MHz)
+  Total number of paths / destination ports: 3068 / 1
+-------------------------------------------------------------------------
+Delay:               5.006ns (Levels of Logic = 10)
+  Source:            ControlUnit/ALUSrcA (LATCH)
+  Destination:       ControlUnit/PCSrc_0 (LATCH)
+  Source Clock:      ControlUnit/op[5]_PWR_30_o_Select_57_o falling
+  Destination Clock: ControlUnit/op[5]_PWR_30_o_Select_57_o falling
+
+  Data Path: ControlUnit/ALUSrcA to ControlUnit/PCSrc_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q             191   0.330   0.772  ControlUnit/ALUSrcA (ControlUnit/ALUSrcA)
+     LUT6:I0->O            1   0.043   0.000  alu/out5_F (N1123)
+     MUXF7:I0->O           3   0.176   0.507  alu/out5 (alu/out4)
+     LUT6:I3->O           21   0.043   0.461  alu/out6 (alu/_n0051)
+     LUT6:I5->O           49   0.043   0.483  alu/Mmux_result252 (alu/Mmux_result251)
+     LUT3:I2->O           83   0.043   0.489  alu/Mmux_result254 (result<3>)
+     LUT5:I4->O            1   0.043   0.350  alu/ALUOp[2]_GND_71_o_equal_19_o<31>5 (alu/ALUOp[2]_GND_71_o_equal_19_o<31>4)
+     LUT4:I3->O            1   0.043   0.350  alu/ALUOp[2]_GND_71_o_equal_19_o<31>6_SW0 (N1107)
+     LUT6:I5->O            1   0.043   0.350  alu/ALUOp[2]_GND_71_o_equal_19_o<31>6 (alu/ALUOp[2]_GND_71_o_equal_19_o<31>5)
+     LUT6:I5->O            1   0.043   0.350  alu/ALUOp[2]_GND_71_o_equal_19_o<31>8 (zero)
+     LUT5:I4->O            1   0.043   0.000  ControlUnit/op[5]_GND_59_o_Select_64_o<0>1 (ControlUnit/op[5]_GND_59_o_Select_64_o)
+     LD:D                     -0.034          ControlUnit/PCSrc_0
+    ----------------------------------------
+    Total                      5.006ns (0.893ns logic, 4.113ns route)
+                                       (17.8% logic, 82.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SW<5>'
+  Total number of paths / destination ports: 72 / 68
+-------------------------------------------------------------------------
+Offset:              1.173ns (Levels of Logic = 2)
+  Source:            SW<5> (PAD)
+  Destination:       pcAdd/nextPC_31 (FF)
+  Destination Clock: SW<5> rising
+
+  Data Path: SW<5> to pcAdd/nextPC_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.000   0.500  SW_5_IBUF (SW_5_IBUF)
+     LUT3:I0->O           32   0.043   0.469  pcAdd/_n0044_inv1 (pcAdd/_n0044_inv)
+     FDRE:CE                   0.161          pcAdd/nextPC_0
+    ----------------------------------------
+    Total                      1.173ns (0.204ns logic, 0.969ns route)
+                                       (17.4% logic, 82.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 37 / 37
+-------------------------------------------------------------------------
+Offset:              1.137ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       pc/curPC_31 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: Reset to pc/curPC_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.000   0.344  Reset_IBUF (Reset_IBUF)
+     INV:I->O             64   0.054   0.475  pcAdd/Reset_inv1_INV_0 (pc/Reset_inv)
+     FDCE:CLR                  0.264          pc/curPC_0
+    ----------------------------------------
+    Total                      1.137ns (0.318ns logic, 0.819ns route)
+                                       (28.0% logic, 72.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'm2/clkdiv_3'
+  Total number of paths / destination ports: 672 / 56
+-------------------------------------------------------------------------
+Offset:              1.466ns (Levels of Logic = 3)
+  Source:            SW<14> (PAD)
+  Destination:       s0/U2/shift_63 (FF)
+  Destination Clock: m2/clkdiv_3 rising
+
+  Data Path: SW<14> to s0/U2/shift_63
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            32   0.000   0.743  SW_14_IBUF (SW_14_IBUF)
+     LUT6:I0->O            7   0.043   0.637  Seg_show<0>1 (Seg_show<0>)
+     LUT6:I1->O            1   0.043   0.000  s0/U2/mux5511 (s0/U2/shift[64]_shift[63]_mux_6_OUT<5>)
+     FDE:D                    -0.000          s0/U2/shift_5
+    ----------------------------------------
+    Total                      1.466ns (0.086ns logic, 1.380ns route)
+                                       (5.9% logic, 94.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 1449 / 13
+-------------------------------------------------------------------------
+Offset:              6.019ns (Levels of Logic = 9)
+  Source:            m2/clkdiv_17 (FF)
+  Destination:       SEGMENT<3> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: m2/clkdiv_17 to SEGMENT<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              14   0.236   0.411  m2/clkdiv_17 (m2/clkdiv_17)
+     INV:I->O              2   0.317   0.608  m6/XLXI_2/XLXI_1/XLXI_2 (m6/XLXI_2/XLXI_1/XLXN_9)
+     AND2:I1->O            4   0.053   0.620  m6/XLXI_2/XLXI_1/XLXI_8 (m6/XLXI_2/XLXI_1/XLXN_24)
+     AND2:I1->O            1   0.053   0.603  m6/XLXI_2/XLXI_1/XLXI_16 (m6/XLXI_2/XLXI_1/XLXN_63)
+     OR4:I1->O            11   0.053   0.395  m6/XLXI_2/XLXI_1/XLXI_28 (m6/HEX<1>)
+     INV:I->O              8   0.317   0.561  m6/XLXI_3/XLXI_3 (m6/XLXI_3/XLXN_17)
+     AND4:I2->O            2   0.134   0.500  m6/XLXI_3/XLXI_5 (m6/XLXI_3/XLXN_25)
+     OR4:I3->O             1   0.161   0.603  m6/XLXI_3/XLXI_100 (m6/XLXI_3/XLXN_30)
+     OR2:I1->O             1   0.053   0.339  m6/XLXI_3/XLXI_107 (SEGMENT_0_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_0_OBUF (SEGMENT<0>)
+    ----------------------------------------
+    Total                      6.019ns (1.377ns logic, 4.642ns route)
+                                       (22.9% logic, 77.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'm2/clkdiv_3'
+  Total number of paths / destination ports: 66 / 3
+-------------------------------------------------------------------------
+Offset:              2.262ns (Levels of Logic = 13)
+  Source:            s0/U2/shift_45 (FF)
+  Destination:       SEGLED_CLK (PAD)
+  Source Clock:      m2/clkdiv_3 rising
+
+  Data Path: s0/U2/shift_45 to SEGLED_CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.236   0.618  s0/U2/shift_45 (s0/U2/shift_45)
+     LUT6:I0->O            1   0.043   0.000  s0/U2/out1_wg_lut<1> (s0/U2/out1_wg_lut<1>)
+     MUXCY:S->O            1   0.238   0.000  s0/U2/out1_wg_cy<1> (s0/U2/out1_wg_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  s0/U2/out1_wg_cy<2> (s0/U2/out1_wg_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  s0/U2/out1_wg_cy<3> (s0/U2/out1_wg_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  s0/U2/out1_wg_cy<4> (s0/U2/out1_wg_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  s0/U2/out1_wg_cy<5> (s0/U2/out1_wg_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  s0/U2/out1_wg_cy<6> (s0/U2/out1_wg_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  s0/U2/out1_wg_cy<7> (s0/U2/out1_wg_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  s0/U2/out1_wg_cy<8> (s0/U2/out1_wg_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  s0/U2/out1_wg_cy<9> (s0/U2/out1_wg_cy<9>)
+     MUXCY:CI->O          67   0.150   0.486  s0/U2/out1_wg_cy<10> (s0/U2/sckEn)
+     LUT2:I1->O            1   0.043   0.339  s0/U2/sck1 (SEGLED_CLK_OBUF)
+     OBUF:I->O                 0.000          SEGLED_CLK_OBUF (SEGLED_CLK)
+    ----------------------------------------
+    Total                      2.262ns (0.818ns logic, 1.444ns route)
+                                       (36.2% logic, 63.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 344 / 7
+-------------------------------------------------------------------------
+Delay:               4.998ns (Levels of Logic = 9)
+  Source:            SW<6> (PAD)
+  Destination:       SEGMENT<5> (PAD)
+
+  Data Path: SW<6> to SEGMENT<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   0.000   0.578  SW_6_IBUF (SW_6_IBUF)
+     LUT3:I0->O            1   0.043   0.613  Mmux_PCShow161 (PCShow<9>)
+     AND2:I0->O            1   0.043   0.603  m6/XLXI_2/XLXI_1/XLXI_16 (m6/XLXI_2/XLXI_1/XLXN_63)
+     OR4:I1->O            11   0.053   0.395  m6/XLXI_2/XLXI_1/XLXI_28 (m6/HEX<1>)
+     INV:I->O              8   0.317   0.561  m6/XLXI_3/XLXI_3 (m6/XLXI_3/XLXN_17)
+     AND4:I2->O            2   0.134   0.500  m6/XLXI_3/XLXI_5 (m6/XLXI_3/XLXN_25)
+     OR4:I3->O             1   0.161   0.603  m6/XLXI_3/XLXI_100 (m6/XLXI_3/XLXN_30)
+     OR2:I1->O             1   0.053   0.339  m6/XLXI_3/XLXI_107 (SEGMENT_0_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_0_OBUF (SEGMENT<0>)
+    ----------------------------------------
+    Total                      4.998ns (0.804ns logic, 4.194ns route)
+                                       (16.1% logic, 83.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |    1.359|         |    6.050|         |
+ControlUnit/op[5]_PWR_30_o_Select_57_o|         |         |    5.252|         |
+ControlUnit/op[5]_PWR_32_o_Select_61_o|         |         |    5.250|         |
+InsMemRW                              |         |    1.695|    5.774|         |
+SW<5>                                 |    0.575|         |         |         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ControlUnit/op[5]_PWR_30_o_Select_57_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    6.030|         |
+ControlUnit/op[5]_PWR_30_o_Select_57_o|         |         |    5.006|         |
+ControlUnit/op[5]_PWR_32_o_Select_61_o|         |         |    5.204|         |
+InsMemRW                              |         |         |    5.759|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ControlUnit/op[5]_PWR_32_o_Select_61_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+InsMemRW       |         |         |    1.829|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock InsMemRW
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    1.404|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SW<5>
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |    3.238|         |         |         |
+ControlUnit/op[5]_PWR_30_o_Select_57_o|         |    1.537|         |         |
+ControlUnit/op[5]_PWR_32_o_Select_61_o|         |    2.144|         |         |
+InsMemRW                              |         |    2.282|         |         |
+SW<5>                                 |    0.629|         |         |         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock m2/clkdiv_3
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |    6.657|         |         |
+ControlUnit/op[5]_PWR_30_o_Select_57_o|         |    5.859|         |         |
+ControlUnit/op[5]_PWR_32_o_Select_61_o|         |    5.857|         |         |
+InsMemRW                              |         |    6.381|         |         |
+m2/clkdiv_3                           |    2.559|         |         |         |
+--------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 31.00 secs
+Total CPU time to Xst completion: 30.73 secs
+ 
+--> 
+
+Total memory usage is 4676972 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  156 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

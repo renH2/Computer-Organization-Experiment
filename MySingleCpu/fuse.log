@@ -1,0 +1,71 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/HP/Desktop/MySingleCpu/Top_sim_isim_beh.exe" -prj "C:/Users/HP/Desktop/MySingleCpu/Top_sim_beh.prj" "work.Top_sim" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/com/SegmentDecoder.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/Mux4to14b.vf" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/Mux4to1.vf" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/com/ShiftReg.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/com/Seg7Remap.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/com/Seg7Decode.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/MyMC14495.vf" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/DisplaySync.vf" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/com/MyALU/clkdiv.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/SignZeroExtend.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/RegisterFile.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/PcAdd.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/PC.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/InstructionCut.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/InsMEM.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/DataMEM.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/ControlUnit.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/com/Seg7Device.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/DispNum.vf" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/ALU.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/Top.v" into library work
+WARNING:HDLCompiler:751 - "C:/Users/HP/Desktop/MySingleCpu/Top.v" Line 73: Redeclaration of ansi port Reset is not allowed
+Analyzing Verilog file "C:/Users/HP/Desktop/MySingleCpu/Top_sim.v" into library work
+Analyzing Verilog file "F:/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/HP/Desktop/MySingleCpu/Top.v" Line 92: Port segment is not connected to this instance
+Completed static elaboration
+Compiling module clkdiv
+Compiling module INV
+Compiling module AND2
+Compiling module OR4
+Compiling module Mux4to14b_MUSER_DispNum
+Compiling module Mux4to1_MUSER_DispNum
+Compiling module D2_4E_HXILINX_DispNum
+Compiling module VCC
+Compiling module INV4_HXILINX_DispNum
+Compiling module DisplaySync_MUSER_DispNum
+Compiling module AND4
+Compiling module AND3
+Compiling module OR3
+Compiling module OR2
+Compiling module MyMC14495_MUSER_DispNum
+Compiling module DispNum
+Compiling module SegmentDecoder
+Compiling module Seg7Decode
+Compiling module Seg7Remap
+Compiling module ShiftReg(WIDTH=64)
+Compiling module Seg7Device
+Compiling module pcAdd
+Compiling module PC
+Compiling module InsMEM
+Compiling module InstructionCut
+Compiling module ControlUnit
+Compiling module RegisterFile
+Compiling module ALU
+Compiling module DataMEM
+Compiling module SignZeroExtend
+Compiling module Top
+Compiling module Top_sim
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 18 sub-compilation(s) to finish...
+Compiled 33 Verilog Units
+Built simulation executable C:/Users/HP/Desktop/MySingleCpu/Top_sim_isim_beh.exe
+Fuse Memory Usage: 28684 KB
+Fuse CPU Usage: 1343 ms

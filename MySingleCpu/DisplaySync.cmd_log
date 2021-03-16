@@ -1,0 +1,2 @@
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w {E:/English Ruanjian/ISE/CO/single/MySingleCpu/MySingleCpu/com/MyALU/DisplaySync.sch} DisplaySync.tfi 
+sch2hdl -intstyle ise -family kintex7 -verilog DisplaySync_drc.vf -w {E:/English Ruanjian/ISE/CO/single/MySingleCpu/MySingleCpu/com/MyALU/DisplaySync.sch} 

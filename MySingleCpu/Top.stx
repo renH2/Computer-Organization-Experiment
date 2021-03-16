@@ -1,0 +1,107 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/HP/Desktop/MySingleCpu/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/HP/Desktop/MySingleCpu/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\com\SegmentDecoder.v" into library work
+Parsing module <SegmentDecoder>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\Mux4to14b.vf" into library work
+Parsing module <Mux4to14b>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\Mux4to1.vf" into library work
+Parsing module <Mux4to1>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\com\ShiftReg.v" into library work
+Parsing module <ShiftReg>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\com\Seg7Remap.v" into library work
+Parsing module <Seg7Remap>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\com\Seg7Decode.v" into library work
+Parsing module <Seg7Decode>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\MyMC14495.vf" into library work
+Parsing module <MyMC14495>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\DisplaySync.vf" into library work
+Parsing module <INV4_HXILINX_DisplaySync>.
+Parsing module <D2_4E_HXILINX_DisplaySync>.
+Parsing module <Mux4to1_MUSER_DisplaySync>.
+Parsing module <Mux4to14b_MUSER_DisplaySync>.
+Parsing module <DisplaySync>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\com\MyALU\clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\SignZeroExtend.v" into library work
+Parsing module <SignZeroExtend>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\RegisterFile.v" into library work
+Parsing module <RegisterFile>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\PcAdd.v" into library work
+Parsing module <pcAdd>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\PC.v" into library work
+Parsing module <PC>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\InstructionCut.v" into library work
+Parsing module <InstructionCut>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\InsMEM.v" into library work
+Parsing module <InsMEM>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\DataMEM.v" into library work
+Parsing module <DataMEM>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\ControlUnit.v" into library work
+Parsing module <ControlUnit>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\com\Seg7Device.v" into library work
+Parsing module <Seg7Device>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\DispNum.vf" into library work
+Parsing module <INV4_HXILINX_DispNum>.
+Parsing module <D2_4E_HXILINX_DispNum>.
+Parsing module <MyMC14495_MUSER_DispNum>.
+Parsing module <Mux4to1_MUSER_DispNum>.
+Parsing module <Mux4to14b_MUSER_DispNum>.
+Parsing module <DisplaySync_MUSER_DispNum>.
+Parsing module <DispNum>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "C:\Users\HP\Desktop\MySingleCpu\Top.v" into library work
+Parsing module <Top>.
+WARNING:HDLCompiler:751 - "C:\Users\HP\Desktop\MySingleCpu\Top.v" Line 73: Redeclaration of ansi port Reset is not allowed
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.09 secs
+ 
+--> 
+
+Total memory usage is 4504056 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

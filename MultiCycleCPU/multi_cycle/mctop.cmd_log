@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "D:/multi_cycle/mctop.xst" -ofn "D:/multi_cycle/mctop.syr" 
+xst -intstyle ise -ifn "D:/multi_cycle/mctop.xst" -ofn "D:/multi_cycle/mctop.syr" 
+xst -intstyle ise -ifn "D:/multi_cycle/mctop.xst" -ofn "D:/multi_cycle/mctop.syr" 
+xst -intstyle ise -ifn "D:/multi_cycle/mctop.xst" -ofn "D:/multi_cycle/mctop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-1 mctop.ngc mctop.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mctop_map.ncd mctop.ngd mctop.pcf 
+par -w -intstyle ise -ol high -mt off mctop_map.ncd mctop.ncd mctop.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml mctop.twx mctop.ncd -o mctop.twr mctop.pcf 
+xst -intstyle ise -ifn "D:/multi_cycle/mctop.xst" -ofn "D:/multi_cycle/mctop.syr" 
+xst -intstyle ise -ifn "D:/multi_cycle/mctop.xst" -ofn "D:/multi_cycle/mctop.syr" 
+xst -intstyle ise -ifn "D:/multi_cycle/mctop.xst" -ofn "D:/multi_cycle/mctop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-1 mctop.ngc mctop.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mctop_map.ncd mctop.ngd mctop.pcf 
+par -w -intstyle ise -ol high -mt off mctop_map.ncd mctop.ncd mctop.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml mctop.twx mctop.ncd -o mctop.twr mctop.pcf 
+bitgen -intstyle ise -f mctop.ut mctop.ncd 

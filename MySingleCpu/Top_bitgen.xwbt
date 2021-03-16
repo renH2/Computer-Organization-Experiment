@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\English Ruanjian\ISE\CO\single\MySingleCpu\MySingleCpu\Top.ncd
+OUTFILE=E:\English Ruanjian\ISE\CO\single\MySingleCpu\MySingleCpu\Top.bit
+FAMILY=Kintex7
+PART=xc7k160t-2lffg676
+WORKINGDIR=E:\English Ruanjian\ISE\CO\single\MySingleCpu\MySingleCpu
+LICENSE=WebPack
+USER_INFO=__0_0_0

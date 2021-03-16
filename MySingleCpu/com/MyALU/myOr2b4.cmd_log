@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family kintex7 -verilog myOr2b4_drc.vf -w {E:/3180105388/lab 8/MyALU/myOr2b4.sch} 
+sch2sym -intstyle ise -family kintex7 -refsym myOr2b4 {E:/3180105388/lab 8/MyALU/myOr2b4.sch} {E:/3180105388/lab 8/MyALU/myOr2b4.sym} 
